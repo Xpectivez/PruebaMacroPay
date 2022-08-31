@@ -1,0 +1,332 @@
+ <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Macro Pay</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Producto</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#featured" class="nav__link">Sobre</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Contacto</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x' ></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">      
+                    <button style="width:auto;">Carlos CC</button>
+                    <div class="nav__shop" id="cart-shop">
+                        <i class='bx bx-shopping-bag' ></i>
+                    </div>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt' ></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+       
+        <div class="cart" id="cart">
+            <i class='bx bx-x cart__close' id="cart-close"></i>
+
+            <h2 class="cart__title-center">My Cart</h2>
+
+           
+
+            <div class="cart__prices">
+                <span class="cart__prices-item"></span>
+                <span class="cart__prices-total"></span>
+            </div>
+        </div>
+
+        <main class="main">
+            
+            <section class="featured section container" id="featured">
+                    <form class="example" action="action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                      </form>
+            </section>
+
+
+         
+            <section class="products section container" id="products">
+                <h2 class="section__title">
+                    Productos
+                </h2>
+
+                <div class="products__container grid">
+                    <article class="products__card">
+                        <img src="assets/img/product1.png" alt="" class="products__img">
+
+                        <h3 class="products__title">Marca: SAMSUMG </h3>
+                        <h3 class="products__title">Modelo: GALAXY A03</h3>
+                        <span class="products__price">$5,000</span>
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </span>
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                            <button id="myBtn">Ver Descripcion</button>
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/product2.png" alt="" class="products__img">
+
+                        <h3 class="products__title">Marca: SAMSUMG</h3>
+                        <h3 class="products__title">Modelo: GALAXY A13</h3>
+                        <span class="products__price">$5,000</span>
+                        <span class="cart__amount-box">
+                            <i class='bx bx-minus' ></i>
+                        </span>
+                        <span class="cart__amount-number">1</span>
+                        <span class="cart__amount-box">
+                            <i class='bx bx-plus' ></i>
+                        </span>
+                        <button id="myBtn">Ver Descripcion</button>
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/product3.png" alt="" class="products__img">
+
+                        <h3 class="products__title">Marca: SAMSUMG</h3>
+                        <h3 class="products__title">Modelo: GALAXY A7</h3>
+                        <span class="products__price">$5,000</span>
+                        <span class="cart__amount-box">
+                            <i class='bx bx-minus' ></i>
+                        </span>
+                        <span class="cart__amount-number">1</span>
+                        <span class="cart__amount-box">
+                            <i class='bx bx-plus' ></i>
+                        </span>
+                        <button id="myBtn">Ver Descripcion</button>
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                  
+                </div>
+            </section>
+
+        </main>
+        
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>DESCRIPCION</h2>
+              </div>
+              <div class="modal-body">
+                <p>MODELO</p>
+                <p>MARCA</p>
+                <p>FOTOS</p>
+                <p>CARACTERISTICAS</p>
+                <p>ETC</p>
+              </div>
+            </div>
+          
+        </div>
+          
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">Redes Sociales</h3>
+
+                    <ul class="footer__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+
+                        <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-twitter' ></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-instagram' ></i>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__title">Google maps</h3> 
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19603.41815884391!2d-89.61680481823599!3d20.9985769580029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5677c50c46aeab%3A0x87d6d48192becd0b!2sMacropay%20M%C3%A9xico%202!5e0!3m2!1ses-419!2smx!4v1661968718126!5m2!1ses-419!2smx"
+                     width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Dirección</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Calle 27 63, Col. México</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">México, 97125 Mérida, Yuc.</a>
+                        </li>
+                       
+                    </ul>
+                </div>
+
+                
+            </div>
+
+            <span class="footer__copy">&#169; Bedimcode. All rigths reserved</span>
+        </footer>
+
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("myBtn");
+            var span = document.getElementsByClassName("close")[0];
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+
+    </body>
+    <style>
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+{
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+    </style>
+</html>
